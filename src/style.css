@@ -1,16 +1,18 @@
 body {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-repeat: no-repeat;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/009/original/landscape.jpg?1736044535");
   background-size: cover;
   font-family: "Nunito Sans", serif, "Helvetica", sans-serif;
+  color: white;
+}
+header {
+  border-bottom: 0.5px solid rgb(37, 107, 139);
+  padding-bottom: 15px;
 }
 footer {
   color: white;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
 }
 a {
   color: rgb(179, 221, 240);
@@ -26,4 +28,29 @@ a:hover {
   margin: 50px auto;
   padding: 30px;
   background-color: rgba(127, 167, 184, 0.9);
+}
+#current-date {
+  margin-bottom: 5px;
+}
+#city-input {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 20%;
+  font-family: "Nunito Sans", serif, "Helvetica", sans-serif;
+}
+#search-button {
+  background-color: rgb(37, 107, 139);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Nunito Sans", serif, "Helvetica", sans-serif;
+  width: 8%;
+  color: white;
+  margin-left: 5px;
+}
+#weather-today {
+  display: flex;
+  justify-content: space-between;
 }
