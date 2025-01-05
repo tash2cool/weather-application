@@ -1,3 +1,29 @@
-h1 {
-  color: aquamarine;
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/009/original/landscape.jpg?1736044535");
+  background-size: cover;
+  font-family: "Nunito Sans", serif, "Helvetica", sans-serif;
+}
+footer {
+  color: white;
+}
+a {
+  color: rgb(179, 221, 240);
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#weather-container {
+  display: block;
+  border-radius: 10px;
+  width: 70%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(127, 167, 184, 0.9);
 }
