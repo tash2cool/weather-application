@@ -52,5 +52,33 @@ a:hover {
 }
 #weather-today {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+#city-header {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+#weather-emoji {
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
+#temperature-container {
+  display: flex;
+}
+#current-temperature {
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 22px;
+}
+#temperature-unit {
+  margin-top: 36px;
+  font-size: 28px;
+}
+#weather-details {
+  font-weight: 600;
+}
+#weather-details strong {
+  color: rgb(179, 221, 240);
 }
