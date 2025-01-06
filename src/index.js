@@ -14,6 +14,10 @@ function updateWeather(response) {
   humidityHeader.innerHTML = response.data.temperature.humidity;
   let details = document.querySelector("#weather-details");
   details.innerHTML = response.data.condition.description;
+  let icon = document.querySelector("#weather-icon");
+  console.log(response.data);
+  console.log(icon.src);
+  icon.src = response.data.condition.icon_url;
 }
 //updates api url to the corresponding city that was searched
 function updateUrl(city) {
@@ -74,7 +78,6 @@ function setDate() {
   let fullTime = `${hour}:${minutes} ${setting}`;
   let timeHeader = document.querySelector("#current-time");
   timeHeader.innerHTML = fullTime;
-  console.log(date);
 }
 //variables to update city header
 let cityForm = document.querySelector("#search-city");

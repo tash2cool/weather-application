@@ -64,27 +64,33 @@ a:hover {
   margin: 0 auto;
 }
 #city-header {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 800;
+  display: block;
+  text-align: center;
 }
 #country {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
-}
-#weather-emoji {
   display: block;
+  text-align: center;
   position: relative;
   top: -30px;
-  font-size: 80px;
-  text-align: center;
+}
+#weather-icon {
+  display: block;
+  position: relative;
+  top: -70px;
+  height: 110px;
+  margin: 0 auto;
 }
 #temperature-container {
   display: flex;
 }
 #current-temperature {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
-  margin-top: 22px;
+  margin-top: 15px;
 }
 #temperature-unit {
   margin-top: 36px;
