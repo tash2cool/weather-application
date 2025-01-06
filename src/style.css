@@ -22,10 +22,11 @@ a:hover {
   text-decoration: underline;
 }
 #current-date {
-  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
 }
 #current-time {
-  margin-top: 0;
+  font-size: 25px;
 }
 #weather-container {
   display: block;
@@ -59,14 +60,21 @@ a:hover {
 #weather-today {
   display: flex;
   justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
 }
 #city-header {
   font-size: 38px;
   font-weight: 800;
-  margin-bottom: 0;
+}
+#country {
+  font-size: 30px;
+  font-weight: 600;
 }
 #weather-emoji {
   display: block;
+  position: relative;
+  top: -30px;
   font-size: 80px;
   text-align: center;
 }

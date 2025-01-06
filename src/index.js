@@ -1,7 +1,9 @@
 //updates the HTML elements of current city and current weather conditions
 function updateWeather(response) {
   let cityHeader = document.querySelector("#city-header");
-  cityHeader.innerHTML = response.data.city;
+  cityHeader.innerHTML = `${response.data.city}, `;
+  let countryHeader = document.querySelector("#country");
+  countryHeader.innerHTML = response.data.country;
   let temperature = Math.round(response.data.temperature.current);
   let temperatureHeader = document.querySelector("#current-temperature");
   temperatureHeader.innerHTML = temperature;
