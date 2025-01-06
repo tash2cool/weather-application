@@ -21,6 +21,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+#current-date {
+  margin-bottom: 0;
+}
+#current-time {
+  margin-top: 0;
+}
 #weather-container {
   display: block;
   border-radius: 10px;
