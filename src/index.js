@@ -9,14 +9,14 @@ function updateWeather(response) {
   temperatureHeader.innerHTML = temperature;
   let wind = Math.round(response.data.wind.speed);
   let windHeader = document.querySelector("#wind");
-  windHeader.innerHTML = wind;
+  windHeader.innerHTML = `${wind} km/hr`;
   let humidityHeader = document.querySelector("#humidity");
-  humidityHeader.innerHTML = response.data.temperature.humidity;
+  humidityHeader.innerHTML = `${response.data.temperature.humidity}%`;
   let details = document.querySelector("#weather-details");
   details.innerHTML = response.data.condition.description;
   let icon = document.querySelector("#weather-icon");
-  console.log(response.data);
-  console.log(icon.src);
+  //console.log(response.data);
+  //console.log(icon.src);
   icon.src = response.data.condition.icon_url;
 }
 //updates api url to the corresponding city that was searched
@@ -89,3 +89,22 @@ let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${api
 axios.get(apiUrl).then(updateWeather);
 //update the date
 setDate();
+console.log(new Date());
+
+function setDays() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="forecast-day">
+            <div class="forecast-day-one">${day}</div>
+            <div class="forecast-icon">🌤️</div>
+            <span class="forecast-high">12˚</span
+            ><span class="forecast-low"> 10˚</span>
+          </div>`;
+  });
+  let forecast = document.querySelector(".forecast-container");
+  forecast.innerHTML = forecastHTML;
+}
+setDays();
