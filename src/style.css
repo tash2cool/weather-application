@@ -108,8 +108,9 @@ a:hover {
   justify-content: space-evenly;
   position: relative;
   top: -70px;
-  border-top: 0.5px solid rgb(37, 107, 139);
   padding-top: 20px;
+  border-top: 0.5px solid rgb(37, 107, 139);
+  border-top-style: dotted;
 }
 .forecast-day {
   text-align: center;
