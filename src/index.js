@@ -100,10 +100,10 @@ function setDays(response) {
             } alt="weather_icon" class="forecast-icon"/>
             <span class="forecast-high">${Math.round(
               day.temperature.maximum
-            )}</span
+            )}˚</span
             ><span class="forecast-low"> ${Math.round(
               day.temperature.minimum
-            )}</span>
+            )}˚</span>
           </div>`;
     }
   });
@@ -113,7 +113,6 @@ function setDays(response) {
 //retrieves forecast data and sends it to function setDays which updates HTML with forecast data
 function getForecast(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(setDays);
 }
 //variables to update city header
