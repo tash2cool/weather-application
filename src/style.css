@@ -34,6 +34,7 @@ a:hover {
   width: 70%;
   margin: 50px auto;
   padding: 30px;
+  height: 550px;
   background-color: rgba(127, 167, 184, 0.9);
 }
 #current-date {
@@ -107,7 +108,7 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  top: -70px;
+  top: -30px;
   padding-top: 20px;
   border-top: 0.5px solid rgb(37, 107, 139);
   border-top-style: dotted;
@@ -129,6 +130,8 @@ a:hover {
   padding-right: 5px;
 }
 .forecast-icon {
-  font-size: 55px;
-  padding: 20px 0;
+  height: 75px;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
 }
